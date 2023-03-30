@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9BAE8FB129D5A1FD00C13E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FB029D5A1FD00C13E0B /* AppDelegate.swift */; };
 		9BAE8FB329D5A1FD00C13E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FB229D5A1FD00C13E0B /* SceneDelegate.swift */; };
-		9BAE8FB529D5A1FD00C13E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FB429D5A1FD00C13E0B /* ViewController.swift */; };
 		9BAE8FBA29D5A1FE00C13E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BAE8FB929D5A1FE00C13E0B /* Assets.xcassets */; };
 		9BAE8FBD29D5A1FE00C13E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAE8FBB29D5A1FE00C13E0B /* LaunchScreen.storyboard */; };
 		9BAE8FC829D5A1FE00C13E0B /* iOS_CheckSoonETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FC729D5A1FE00C13E0B /* iOS_CheckSoonETests.swift */; };
 		9BAE8FD229D5A1FE00C13E0B /* iOS_CheckSoonEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FD129D5A1FE00C13E0B /* iOS_CheckSoonEUITests.swift */; };
 		9BAE8FD429D5A1FE00C13E0B /* iOS_CheckSoonEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FD329D5A1FE00C13E0B /* iOS_CheckSoonEUITestsLaunchTests.swift */; };
+		9BAE8FE529D5C10B00C13E0B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FE429D5C10B00C13E0B /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		9BAE8FAD29D5A1FD00C13E0B /* iOS-CheckSoonE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-CheckSoonE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAE8FB029D5A1FD00C13E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BAE8FB229D5A1FD00C13E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BAE8FB429D5A1FD00C13E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BAE8FB929D5A1FE00C13E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BAE8FBC29D5A1FE00C13E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BAE8FBE29D5A1FE00C13E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		9BAE8FCD29D5A1FE00C13E0B /* iOS-CheckSoonEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-CheckSoonEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAE8FD129D5A1FE00C13E0B /* iOS_CheckSoonEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CheckSoonEUITests.swift; sourceTree = "<group>"; };
 		9BAE8FD329D5A1FE00C13E0B /* iOS_CheckSoonEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CheckSoonEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BAE8FE429D5C10B00C13E0B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 		9BAE8FE129D5A23F00C13E0B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				9BAE8FB429D5A1FD00C13E0B /* ViewController.swift */,
+				9BAE8FE329D5C0F900C13E0B /* Common */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -146,6 +146,14 @@
 				9BAE8FBE29D5A1FE00C13E0B /* Info.plist */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9BAE8FE329D5C0F900C13E0B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9BAE8FE429D5C10B00C13E0B /* TabBarViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BAE8FB529D5A1FD00C13E0B /* ViewController.swift in Sources */,
+				9BAE8FE529D5C10B00C13E0B /* TabBarViewController.swift in Sources */,
 				9BAE8FB129D5A1FD00C13E0B /* AppDelegate.swift in Sources */,
 				9BAE8FB329D5A1FD00C13E0B /* SceneDelegate.swift in Sources */,
 			);
