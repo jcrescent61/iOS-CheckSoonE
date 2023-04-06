@@ -15,6 +15,15 @@
 		9BAE8FD229D5A1FE00C13E0B /* iOS_CheckSoonEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FD129D5A1FE00C13E0B /* iOS_CheckSoonEUITests.swift */; };
 		9BAE8FD429D5A1FE00C13E0B /* iOS_CheckSoonEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FD329D5A1FE00C13E0B /* iOS_CheckSoonEUITestsLaunchTests.swift */; };
 		9BAE8FE529D5C10B00C13E0B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE8FE429D5C10B00C13E0B /* TabBarViewController.swift */; };
+		9BDC0D8E29DEA573003B8AE8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC0D8D29DEA573003B8AE8 /* NetworkManager.swift */; };
+		9BDC0D9129DEA5BC003B8AE8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC0D9029DEA5BC003B8AE8 /* HTTPMethod.swift */; };
+		9BDC0D9329DEA5DD003B8AE8 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC0D9229DEA5DD003B8AE8 /* ServerAPI.swift */; };
+		9BDC0D9629DEA63E003B8AE8 /* NaverBooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC0D9529DEA63E003B8AE8 /* NaverBooksAPI.swift */; };
+		9BDC0D9829DEBE46003B8AE8 /* CheckSoonEError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC0D9729DEBE46003B8AE8 /* CheckSoonEError.swift */; };
+		9BDF32D529D933050075521C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32D429D933050075521C /* ScanViewController.swift */; };
+		9BDF32DA29D93C120075521C /* DetailBookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32D929D93C120075521C /* DetailBookInfoViewController.swift */; };
+		9BDF32E129D94B590075521C /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32E029D94B590075521C /* ScanViewModel.swift */; };
+		9BDF32E429D954950075521C /* NaverBooksDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32E329D954950075521C /* NaverBooksDetailInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		9BAE8FD129D5A1FE00C13E0B /* iOS_CheckSoonEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CheckSoonEUITests.swift; sourceTree = "<group>"; };
 		9BAE8FD329D5A1FE00C13E0B /* iOS_CheckSoonEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CheckSoonEUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9BAE8FE429D5C10B00C13E0B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9BDC0D8D29DEA573003B8AE8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9BDC0D9029DEA5BC003B8AE8 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9BDC0D9229DEA5DD003B8AE8 /* ServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+		9BDC0D9529DEA63E003B8AE8 /* NaverBooksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverBooksAPI.swift; sourceTree = "<group>"; };
+		9BDC0D9729DEBE46003B8AE8 /* CheckSoonEError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSoonEError.swift; sourceTree = "<group>"; };
+		9BDF32D429D933050075521C /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		9BDF32D929D93C120075521C /* DetailBookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookInfoViewController.swift; sourceTree = "<group>"; };
+		9BDF32E029D94B590075521C /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		9BDF32E329D954950075521C /* NaverBooksDetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverBooksDetailInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				9BAE8FE029D5A23500C13E0B /* Entry */,
+				9BDF32E229D954880075521C /* Model */,
+				9BDF32DB29D941010075521C /* Managers */,
 				9BAE8FE129D5A23F00C13E0B /* Domain */,
 				9BAE8FE229D5A24B00C13E0B /* SupportFiles */,
 			);
@@ -134,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				9BAE8FE329D5C0F900C13E0B /* Common */,
+				9BDF32D329D932EE0075521C /* Scan */,
+				9BDF32D629D93BD70075521C /* DetailBookInfo */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -154,6 +176,67 @@
 				9BAE8FE429D5C10B00C13E0B /* TabBarViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		9BDC0D8F29DEA5B1003B8AE8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9BDC0D8D29DEA573003B8AE8 /* NetworkManager.swift */,
+				9BDC0D9029DEA5BC003B8AE8 /* HTTPMethod.swift */,
+				9BDC0D9429DEA625003B8AE8 /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9BDC0D9429DEA625003B8AE8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9BDC0D9229DEA5DD003B8AE8 /* ServerAPI.swift */,
+				9BDC0D9529DEA63E003B8AE8 /* NaverBooksAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9BDC0D9929DEBE4D003B8AE8 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9BDC0D9729DEBE46003B8AE8 /* CheckSoonEError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9BDF32D329D932EE0075521C /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF32D429D933050075521C /* ScanViewController.swift */,
+				9BDF32E029D94B590075521C /* ScanViewModel.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		9BDF32D629D93BD70075521C /* DetailBookInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF32D929D93C120075521C /* DetailBookInfoViewController.swift */,
+			);
+			path = DetailBookInfo;
+			sourceTree = "<group>";
+		};
+		9BDF32DB29D941010075521C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9BDC0D9929DEBE4D003B8AE8 /* Error */,
+				9BDC0D8F29DEA5B1003B8AE8 /* Network */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9BDF32E229D954880075521C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF32E329D954950075521C /* NaverBooksDetailInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +369,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BDC0D8E29DEA573003B8AE8 /* NetworkManager.swift in Sources */,
+				9BDF32E429D954950075521C /* NaverBooksDetailInfo.swift in Sources */,
 				9BAE8FE529D5C10B00C13E0B /* TabBarViewController.swift in Sources */,
+				9BDC0D9829DEBE46003B8AE8 /* CheckSoonEError.swift in Sources */,
 				9BAE8FB129D5A1FD00C13E0B /* AppDelegate.swift in Sources */,
 				9BAE8FB329D5A1FD00C13E0B /* SceneDelegate.swift in Sources */,
+				9BDC0D9329DEA5DD003B8AE8 /* ServerAPI.swift in Sources */,
+				9BDF32D529D933050075521C /* ScanViewController.swift in Sources */,
+				9BDF32E129D94B590075521C /* ScanViewModel.swift in Sources */,
+				9BDC0D9129DEA5BC003B8AE8 /* HTTPMethod.swift in Sources */,
+				9BDC0D9629DEA63E003B8AE8 /* NaverBooksAPI.swift in Sources */,
+				9BDF32DA29D93C120075521C /* DetailBookInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
