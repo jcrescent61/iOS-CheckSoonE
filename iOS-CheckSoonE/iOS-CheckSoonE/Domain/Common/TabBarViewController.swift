@@ -23,7 +23,11 @@ final class TabBarViewController: UITabBarController {
         homeViewController.tabBarItem.image = UIImage(systemName: "house")
         homeViewController.tabBarItem.title = "HOME"
         
-        let scanViewController = UIViewController()
+        let scanViewController = UINavigationController(
+            rootViewController: ScanViewController.instance(
+                ScanViewModel(networkManager: NetworkManager())
+            )
+        )
         scanViewController.tabBarItem.image = UIImage(systemName: "barcode.viewfinder")
         scanViewController.tabBarItem.title = "SCAN"
         
